@@ -1,0 +1,12 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(gh api *)",
+      "Bash(gh repo *)",
+      "PowerShell(gh api repos/olukinbb/website/pages)",
+      "PowerShell(gh repo view olukinbb/website --json defaultBranchRef,visibility)",
+      "Bash(curl -s https://api.github.com/repos/olukinbb/website/pages)",
+      "Bash(curl -s https://api.github.com/repos/olukinbb/website)"
+    ]
+  }
+}
