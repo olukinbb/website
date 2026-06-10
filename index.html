@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Olukin — Lifestyle Boutique | Barbados</title>
+  <meta name="description" content="Olukin Lifestyle Boutique — Curated luxury bags, clothing, and accessories. Treasures worth anchoring for. Hastings, Christ Church, Barbados.">
+  <link rel="icon" type="image/jpeg" href="media/Logos/Logo2.jpeg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- ===== WIP BANNER ===== -->
+  <div class="wip-banner">
+    <span class="wip-diamond">✦</span>
+    Website in Progress &mdash; Full launch coming soon &nbsp;&bull;&nbsp;
+    Follow us on Instagram
+    <a href="https://www.instagram.com/olu.kin?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank" rel="noopener">@olu.kin</a>
+    <span class="wip-diamond">✦</span>
+  </div>
+
+  <!-- ===== NAVIGATION ===== -->
+  <nav id="main-nav">
+    <a href="#top" class="nav-logo">
+      <img src="media/Logos/Logo2.jpeg" alt="Olukin Lifestyle Boutique" class="logo-circle">
+    </a>
+
+    <ul class="nav-links">
+      <li><a href="#shop">Shop</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="https://www.instagram.com/olu.kin?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank" rel="noopener">Instagram</a></li>
+      <li><a href="https://maps.app.goo.gl/qYyoaRvQWGBQeSe46" target="_blank" rel="noopener">Find Us</a></li>
+    </ul>
+
+    <div class="nav-actions">
+      <a href="mailto:olukin.bb@gmail.com" class="btn-nav-outline">Contact</a>
+      <a href="https://wa.me/12462432155" target="_blank" rel="noopener" class="btn-nav-filled">WhatsApp</a>
+    </div>
+
+    <button class="nav-toggle" id="nav-toggle" aria-label="Open menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- Mobile menu drawer -->
+  <div class="mobile-menu" id="mobile-menu" aria-hidden="true">
+    <ul>
+      <li><a href="#shop"        onclick="closeMobileMenu()">Shop</a></li>
+      <li><a href="#about"       onclick="closeMobileMenu()">About</a></li>
+      <li><a href="https://www.instagram.com/olu.kin?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank" rel="noopener" onclick="closeMobileMenu()">Instagram</a></li>
+      <li><a href="https://maps.app.goo.gl/qYyoaRvQWGBQeSe46" target="_blank" rel="noopener" onclick="closeMobileMenu()">Find Us</a></li>
+    </ul>
+    <div class="mobile-menu-actions">
+      <a href="mailto:olukin.bb@gmail.com" class="btn-nav-outline" onclick="closeMobileMenu()">Email Us</a>
+      <a href="https://wa.me/12462432155" target="_blank" rel="noopener" class="btn-nav-filled" onclick="closeMobileMenu()">WhatsApp</a>
+    </div>
+  </div>
+
+  <!-- ===== HERO ===== -->
+  <section class="hero" id="top">
+    <div class="hero-content">
+      <span class="hero-eyebrow reveal">Barbados &nbsp;·&nbsp; Est. 2024</span>
+      <h1 class="hero-title reveal reveal-d1">
+        Olukin<br>
+        <em>Lifestyle</em><br>
+        Boutique
+      </h1>
+      <p class="hero-tagline reveal reveal-d2">
+        Treasures worth anchoring for. Curated luxury bags,
+        clothing, and accessories rooted in the Caribbean spirit of Barbados.
+      </p>
+      <div class="hero-ctas reveal reveal-d3">
+        <a href="#shop" class="btn-primary"><span>See Products</span></a>
+        <a href="https://wa.me/12462432155" target="_blank" rel="noopener" class="btn-secondary">Order via WhatsApp</a>
+      </div>
+    </div>
+    <div class="hero-image">
+      <!-- HERO IMAGE SLOT: replace with your preferred hero photo -->
+      <img src="media/Professional%20Pictures/Picture6.jpg" alt="Olukin — Pink leather tote on a Barbados beach">
+      <div class="hero-image-overlay"></div>
+    </div>
+  </section>
+
+  <!-- ===== CATEGORY STRIP ===== -->
+  <div class="categories-strip">
+    <a href="#shop" class="category-card" data-jump="bags">
+      <!-- CATEGORY IMAGE SLOT: bags/bag-category.jpg -->
+      <img src="media/Professional%20Pictures/Picture2.jpg" alt="Bags">
+      <div class="category-overlay">
+        <div class="category-label">
+          <h3>Bags</h3>
+          <p>Curated Handbags &amp; Totes</p>
+          <span class="cat-arrow">Explore &#8594;</span>
+        </div>
+      </div>
+    </a>
+    <a href="#shop" class="category-card" data-jump="clothing">
+      <!-- CATEGORY IMAGE SLOT: clothing/clothing-category.jpg -->
+      <img src="media/InStore%20Pictures/WhatsApp%20Image%202026-06-09%20at%208.32.28%20PM.jpeg" alt="Clothing">
+      <div class="category-overlay">
+        <div class="category-label">
+          <h3>Clothing</h3>
+          <p>Resort &amp; Everyday Wear</p>
+          <span class="cat-arrow">Explore &#8594;</span>
+        </div>
+      </div>
+    </a>
+    <a href="#shop" class="category-card" data-jump="accessories">
+      <!-- CATEGORY IMAGE SLOT: accessories/accessories-category.jpg -->
+      <img src="media/Professional%20Pictures/Picture1.jpg" alt="Accessories">
+      <div class="category-overlay">
+        <div class="category-label">
+          <h3>Accessories</h3>
+          <p>Lifestyle &amp; Fragrance</p>
+          <span class="cat-arrow">Explore &#8594;</span>
+        </div>
+      </div>
+    </a>
+  </div>
+
+  <!-- ===== SHOP ===== -->
+  <section id="shop" class="shop-section">
+    <div class="section-header">
+      <span class="section-eyebrow reveal">Our Collection</span>
+      <h2 class="section-title reveal reveal-d1">Curated for the Caribbean</h2>
+      <p class="section-subtitle reveal reveal-d2">Each piece selected to complement the Barbados lifestyle — effortless, elevated, sun-kissed.</p>
+    </div>
+
+    <div class="filter-tabs" role="tablist">
+      <button class="filter-tab active" data-filter="all"         role="tab" aria-selected="true">All</button>
+      <button class="filter-tab"        data-filter="bags"        role="tab" aria-selected="false">Bags</button>
+      <button class="filter-tab"        data-filter="clothing"    role="tab" aria-selected="false">Clothing</button>
+      <button class="filter-tab"        data-filter="accessories" role="tab" aria-selected="false">Accessories</button>
+      <button class="filter-tab"        data-filter="lifestyle"   role="tab" aria-selected="false">Lifestyle</button>
+    </div>
+
+    <div class="products-grid">
+
+      <!-- PRODUCT SLOT: bag-1.jpg — Pink Leather Tote -->
+      <div class="product-card" data-category="bags">
+        <div class="product-img-wrap">
+          <img src="media/Professional%20Pictures/Picture6.jpg" alt="Pink Leather Tote" loading="lazy">
+          <div class="product-hover-overlay">
+            <a href="https://wa.me/12462432155?text=Hi%20Olukin!%20I%27m%20interested%20in%20the%20Pink%20Leather%20Tote." target="_blank" rel="noopener" class="btn-enquire">Enquire</a>
+          </div>
+        </div>
+        <div class="product-info">
+          <span class="product-category">Bags</span>
+          <h3 class="product-name">Pink Leather Tote</h3>
+          <p class="product-price">Contact to Order</p>
+        </div>
+      </div>
+
+      <!-- PRODUCT SLOT: bag-2.jpg — Summer Wicker Mini Bag -->
+      <div class="product-card" data-category="bags">
+        <div class="product-img-wrap">
+          <img src="media/Professional%20Pictures/Picture2.jpg" alt="Summer Wicker Mini Bag" loading="lazy">
+          <div class="product-hover-overlay">
+            <a href="https://wa.me/12462432155?text=Hi%20Olukin!%20I%27m%20interested%20in%20the%20Summer%20Wicker%20Mini%20Bag." target="_blank" rel="noopener" class="btn-enquire">Enquire</a>
+          </div>
+        </div>
+        <div class="product-info">
+          <span class="product-category">Bags</span>
+          <h3 class="product-name">Summer Wicker Mini Bag</h3>
+          <p class="product-price">Contact to Order</p>
+        </div>
+      </div>
+
+      <!-- PRODUCT SLOT: accessories-1.jpg — Cap & Sunglasses Set -->
+      <div class="product-card" data-category="accessories">
+        <div class="product-img-wrap">
+          <img src="media/Professional%20Pictures/Picture1.jpg" alt="Cap & Sunglasses Set" loading="lazy">
+          <div class="product-hover-overlay">
+            <a href="https://wa.me/12462432155?text=Hi%20Olukin!%20I%27m%20interested%20in%20the%20Cap%20%26%20Sunglasses%20Set." target="_blank" rel="noopener" class="btn-enquire">Enquire</a>
+          </div>
+        </div>
+        <div class="product-info">
+          <span class="product-category">Accessories</span>
+          <h3 class="product-name">Cap &amp; Sunglasses Set</h3>
+          <p class="product-price">Contact to Order</p>
+        </div>
+      </div>
+
+      <!-- PRODUCT SLOT: accessories-2.jpg — Luxury Fragrance Duo -->
+      <div class="product-card" data-category="accessories">
+        <div class="product-img-wrap">
+          <img src="media/Professional%20Pictures/Picture4.jpg" alt="Luxury Fragrance Duo" loading="lazy">
+          <div class="product-hover-overlay">
+            <a href="https://wa.me/12462432155?text=Hi%20Olukin!%20I%27m%20interested%20in%20the%20Luxury%20Fragrance%20Duo." target="_blank" rel="noopener" class="btn-enquire">Enquire</a>
+          </div>
+        </div>
+        <div class="product-info">
+          <span class="product-category">Accessories</span>
+          <h3 class="product-name">Luxury Fragrance Duo</h3>
+          <p class="product-price">Contact to Order</p>
+        </div>
+      </div>
+
+      <!-- PRODUCT SLOT: accessories-3.jpg — Ocean Body Care Set -->
+      <div class="product-card" data-category="accessories">
+        <div class="product-img-wrap">
+          <img src="media/Professional%20Pictures/Picture5.jpg" alt="Ocean Body Care Set" loading="lazy">
+          <div class="product-hover-overlay">
+            <a href="https://wa.me/12462432155?text=Hi%20Olukin!%20I%27m%20interested%20in%20the%20Ocean%20Body%20Care%20Set." target="_blank" rel="noopener" class="btn-enquire">Enquire</a>
+          </div>
+        </div>
+        <div class="product-info">
+          <span class="product-category">Accessories</span>
+          <h3 class="product-name">Ocean Body Care Set</h3>
+          <p class="product-price">Contact to Order</p>
+        </div>
+      </div>
+
+      <!-- PRODUCT SLOT: lifestyle-1.jpg — Sea Salt Waves Home Set -->
+      <div class="product-card" data-category="lifestyle">
+        <div class="product-img-wrap">
+          <img src="media/Professional%20Pictures/Picture3.jpg" alt="Sea Salt Waves Home Set" loading="lazy">
+          <div class="product-hover-overlay">
+            <a href="https://wa.me/12462432155?text=Hi%20Olukin!%20I%27m%20interested%20in%20the%20Sea%20Salt%20Waves%20Home%20Set." target="_blank" rel="noopener" class="btn-enquire">Enquire</a>
+          </div>
+        </div>
+        <div class="product-info">
+          <span class="product-category">Lifestyle</span>
+          <h3 class="product-name">Sea Salt Waves Home Set</h3>
+          <p class="product-price">Contact to Order</p>
+        </div>
+      </div>
+
+      <!-- PRODUCT SLOT: lifestyle-2.jpg — Artisan Candle Collection -->
+      <div class="product-card" data-category="lifestyle">
+        <div class="product-img-wrap">
+          <img src="media/Professional%20Pictures/Picture7.jpg" alt="Artisan Candle Collection" loading="lazy">
+          <div class="product-hover-overlay">
+            <a href="https://wa.me/12462432155?text=Hi%20Olukin!%20I%27m%20interested%20in%20the%20Artisan%20Candle%20Collection." target="_blank" rel="noopener" class="btn-enquire">Enquire</a>
+          </div>
+        </div>
+        <div class="product-info">
+          <span class="product-category">Lifestyle</span>
+          <h3 class="product-name">Artisan Candle Collection</h3>
+          <p class="product-price">Contact to Order</p>
+        </div>
+      </div>
+
+      <!-- PRODUCT SLOT: clothing-1.jpg — Resort Wear Collection -->
+      <div class="product-card" data-category="clothing">
+        <div class="product-img-wrap">
+          <img src="media/InStore%20Pictures/WhatsApp%20Image%202026-06-09%20at%208.32.29%20PM%20(1).jpeg" alt="Resort Wear Collection" loading="lazy">
+          <div class="product-hover-overlay">
+            <a href="https://wa.me/12462432155?text=Hi%20Olukin!%20I%27m%20interested%20in%20your%20clothing%20collection." target="_blank" rel="noopener" class="btn-enquire">Enquire</a>
+          </div>
+        </div>
+        <div class="product-info">
+          <span class="product-category">Clothing</span>
+          <h3 class="product-name">Resort Wear Collection</h3>
+          <p class="product-price">Visit In-Store</p>
+        </div>
+      </div>
+
+    </div><!-- /products-grid -->
+
+    <div class="shop-cta-row reveal">
+      <p>Looking for something specific? We're happy to help.</p>
+      <a href="https://wa.me/12462432155" target="_blank" rel="noopener" class="btn-primary"><span>Chat on WhatsApp</span></a>
+    </div>
+  </section>
+
+  <!-- ===== VIDEO SHOWCASE ===== -->
+  <section class="video-section">
+    <div class="video-section-inner">
+
+      <!-- Left: portrait videos -->
+      <div class="video-pair">
+        <div class="video-tile">
+          <!-- VIDEO SLOT: media/Videos/video1.mp4 -->
+          <video autoplay muted loop playsinline>
+            <source src="media/Videos/video1.mp4" type="video/mp4">
+          </video>
+        </div>
+        <div class="video-tile video-tile--offset">
+          <!-- VIDEO SLOT: media/Videos/video2.mp4 -->
+          <video autoplay muted loop playsinline>
+            <source src="media/Videos/video2.mp4" type="video/mp4">
+          </video>
+        </div>
+      </div>
+
+      <!-- Right: text panel -->
+      <div class="video-text-panel">
+        <span class="section-eyebrow light">In Motion</span>
+        <h2 class="section-title light">The Olukin<br><em>Experience</em></h2>
+        <p class="section-subtitle light">Step into our Hastings boutique and discover a world where Caribbean warmth meets curated luxury. Every visit is an occasion.</p>
+        <a href="https://maps.app.goo.gl/qYyoaRvQWGBQeSe46" target="_blank" rel="noopener" class="btn-primary btn-light"><span>Find Our Store</span></a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ===== IN-STORE GALLERY ===== -->
+  <section class="gallery-section">
+    <div class="section-header gallery-header">
+      <span class="section-eyebrow reveal">Inside Olukin</span>
+      <h2 class="section-title reveal reveal-d1">Visit Us in Barbados</h2>
+    </div>
+    <div class="gallery-grid">
+      <!-- GALLERY IMAGE SLOTS: replace with store/lifestyle images -->
+      <div class="gallery-item gi-tall">
+        <img src="media/InStore%20Pictures/WhatsApp%20Image%202026-06-09%20at%208.32.29%20PM.jpeg" alt="Bags on display at Olukin" loading="lazy">
+      </div>
+      <div class="gallery-item">
+        <img src="media/InStore%20Pictures/WhatsApp%20Image%202026-06-09%20at%208.32.28%20PM.jpeg" alt="Clothing racks at Olukin" loading="lazy">
+      </div>
+      <div class="gallery-item">
+        <img src="media/InStore%20Pictures/WhatsApp%20Image%202026-06-09%20at%208.32.29%20PM%20(1).jpeg" alt="Olukin boutique interior" loading="lazy">
+      </div>
+      <div class="gallery-item gi-tall">
+        <img src="media/InStore%20Pictures/WhatsApp%20Image%202026-06-09%20at%208.32.28%20PM%20(1).jpeg" alt="Store display" loading="lazy">
+      </div>
+      <div class="gallery-item">
+        <img src="media/InStore%20Pictures/WhatsApp%20Image%202026-06-09%20at%208.32.28%20PM%20(2).jpeg" alt="Accessories shelf" loading="lazy">
+      </div>
+      <div class="gallery-item">
+        <img src="media/InStore%20Pictures/WhatsApp%20Image%202026-06-09%20at%208.32.28%20PM%20(3).jpeg" alt="Olukin storefront" loading="lazy">
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== ABOUT ===== -->
+  <section id="about" class="about-section">
+    <div class="about-text">
+      <span class="section-eyebrow reveal">Our Story</span>
+      <h2 class="section-title reveal reveal-d1">Treasures Worth<br><em>Anchoring For</em></h2>
+      <div class="about-body reveal reveal-d2">
+        <p>Olukin is a lifestyle boutique born from a deep love of beauty, quality, and the vibrant spirit of Barbados. Nestled in Hastings, Christ Church, we curate a thoughtful selection of luxury handbags, resort clothing, accessories, and lifestyle products — each piece chosen with intention.</p>
+        <p>Our anchor isn't just a logo — it's a promise. Every item in our collection is a treasure worth holding onto: thoughtfully sourced, impeccably presented, and delivered with the warmth of Caribbean hospitality.</p>
+        <p>Whether you're a local or visiting the island, Olukin is your destination for elevated, effortless style.</p>
+      </div>
+      <div class="about-ctas reveal reveal-d3">
+        <a href="https://www.instagram.com/olu.kin?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank" rel="noopener" class="btn-primary"><span>Follow @olu.kin</span></a>
+        <a href="https://maps.app.goo.gl/qYyoaRvQWGBQeSe46" target="_blank" rel="noopener" class="btn-secondary">Get Directions</a>
+      </div>
+    </div>
+    <div class="about-image reveal reveal-d2">
+      <!-- ABOUT IMAGE SLOT: store/about-image.jpg -->
+      <img src="media/InStore%20Pictures/WhatsApp%20Image%202026-06-09%20at%208.32.29%20PM%20(2).jpeg" alt="Inside Olukin Lifestyle Boutique">
+      <div class="about-accent-border"></div>
+      <div class="about-badge">
+        <strong>&#9875;</strong>
+        <span>Hastings, Barbados</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CONTACT STRIP ===== -->
+  <section class="contact-strip">
+    <div class="contact-strip-text">
+      <span class="section-eyebrow reveal">Get in Touch</span>
+      <h2 class="section-title reveal reveal-d1">Ready to Find<br>Your Treasure?</h2>
+      <p class="section-subtitle reveal reveal-d2">Reach out to enquire about products, check availability, or simply say hello. We'd love to hear from you.</p>
+    </div>
+    <div class="contact-strip-actions reveal reveal-d2">
+      <a href="https://wa.me/12462432155" target="_blank" rel="noopener" class="btn-contact">
+        <!-- WhatsApp icon -->
+        <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+        WhatsApp Us
+      </a>
+      <a href="mailto:olukin.bb@gmail.com" class="btn-contact">
+        <!-- Email icon -->
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
+        olukin.bb@gmail.com
+      </a>
+      <a href="https://maps.app.goo.gl/qYyoaRvQWGBQeSe46" target="_blank" rel="noopener" class="btn-contact">
+        <!-- Map pin icon -->
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path stroke-linecap="round" stroke-linejoin="round" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+        Hastings, Barbados
+      </a>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer id="footer">
+    <div class="footer-grid">
+
+      <!-- Brand column -->
+      <div class="footer-brand">
+        <img src="media/Logos/Logo2.jpeg" alt="Olukin Lifestyle Boutique" class="footer-logo logo-circle">
+        <p>A luxury lifestyle boutique nestled in Hastings, Christ Church, Barbados. Curated with love for those who seek treasures worth anchoring for.</p>
+        <em class="footer-tagline">&#9875; Treasures Worth Anchoring For</em>
+        <div class="footer-social">
+          <a href="https://www.instagram.com/olu.kin?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank" rel="noopener" aria-label="Instagram">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+          </a>
+          <a href="https://wa.me/12462432155" target="_blank" rel="noopener" aria-label="WhatsApp">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+          </a>
+          <a href="mailto:olukin.bb@gmail.com" aria-label="Email">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <!-- Shop column -->
+      <div class="footer-col">
+        <h4>Shop</h4>
+        <ul>
+          <li><a href="#shop" data-jump="bags">Bags</a></li>
+          <li><a href="#shop" data-jump="clothing">Clothing</a></li>
+          <li><a href="#shop" data-jump="accessories">Accessories</a></li>
+          <li><a href="#shop" data-jump="lifestyle">Lifestyle</a></li>
+          <li><a href="#shop" data-jump="all">All Products</a></li>
+        </ul>
+      </div>
+
+      <!-- Visit column -->
+      <div class="footer-col">
+        <h4>Visit</h4>
+        <ul>
+          <li>Tamkris Apts</li>
+          <li>Hastings, Christ Church</li>
+          <li>Barbados</li>
+          <li class="footer-map-link"><a href="https://maps.app.goo.gl/qYyoaRvQWGBQeSe46" target="_blank" rel="noopener">Get Directions &#8594;</a></li>
+        </ul>
+      </div>
+
+      <!-- Contact column -->
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <ul>
+          <li><a href="mailto:olukin.bb@gmail.com">olukin.bb@gmail.com</a></li>
+          <li><a href="https://wa.me/12462432155">+1 (246) 243-2155</a></li>
+          <li><a href="https://www.instagram.com/olu.kin?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank" rel="noopener">@olu.kin on Instagram</a></li>
+        </ul>
+      </div>
+
+    </div><!-- /footer-grid -->
+
+    <div class="footer-bottom">
+      <p>&copy; 2026 Olukin Lifestyle Boutique. All rights reserved.</p>
+      <p class="footer-credit">Hastings, Christ Church, Barbados &nbsp;&#9875;</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
