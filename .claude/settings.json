@@ -7,7 +7,8 @@
       "PowerShell(gh repo view olukinbb/website --json defaultBranchRef,visibility)",
       "Bash(curl -s https://api.github.com/repos/olukinbb/website/pages)",
       "Bash(curl -s https://api.github.com/repos/olukinbb/website)",
-      "Bash(powershell -Command \"\\(Get-Content index.html -Raw\\) -replace '2462432155','2462438601' -replace '\\\\\\(246\\\\\\) 243-2155','\\(246\\) 243-8601' | Set-Content -NoNewline index.html\")"
+      "Bash(powershell -Command \"\\(Get-Content index.html -Raw\\) -replace '2462432155','2462438601' -replace '\\\\\\(246\\\\\\) 243-2155','\\(246\\) 243-8601' | Set-Content -NoNewline index.html\")",
+      "Bash(start \"\" \"c:\\\\Users\\\\kylea\\\\Documents\\\\Project\\\\website\\\\index.html\")"
     ]
   }
 }
