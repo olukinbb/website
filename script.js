@@ -10,12 +10,14 @@
   }, { passive: true });
 
   /* ── Mobile menu ── */
-  const toggle   = document.getElementById('nav-toggle');
+  const toggle     = document.getElementById('nav-toggle');
   const mobileMenu = document.getElementById('mobile-menu');
+  const backdrop   = document.getElementById('menu-backdrop');
 
   toggle.addEventListener('click', () => {
     const isOpen = mobileMenu.classList.toggle('open');
     toggle.classList.toggle('open', isOpen);
+    backdrop.classList.toggle('show', isOpen);
     toggle.setAttribute('aria-expanded', isOpen);
     mobileMenu.setAttribute('aria-hidden', !isOpen);
     document.body.style.overflow = isOpen ? 'hidden' : '';
@@ -24,10 +26,16 @@
   window.closeMobileMenu = function () {
     mobileMenu.classList.remove('open');
     toggle.classList.remove('open');
+    backdrop.classList.remove('show');
     toggle.setAttribute('aria-expanded', false);
     mobileMenu.setAttribute('aria-hidden', true);
     document.body.style.overflow = '';
   };
+
+  backdrop.addEventListener('click', closeMobileMenu);
+  document.addEventListener('keydown', e => {
+    if (e.key === 'Escape' && mobileMenu.classList.contains('open')) closeMobileMenu();
+  });
 
   /* ── Category-strip & footer shop links jump to correct filter ── */
   document.querySelectorAll('[data-jump]').forEach(el => {
